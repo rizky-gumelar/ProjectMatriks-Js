@@ -1,0 +1,89 @@
+.matriks {
+    display: flex;
+    justify-content: center;
+}
+
+h1,
+h3 {
+    text-align: center;
+}
+
+th>input {
+    width: 80px;
+    height: 25px;
+}
+
+input[type=button] {
+    width: 60px;
+}
+
+.operasi {
+    margin: auto 20px 50px 20px;
+}
+
+.rc {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.rc input {
+    height: 20px;
+    width: 40px;
+}
+
+.rc p {
+    margin: 0;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+#hasile {
+    text-align: center;
+    margin: 20px;
+    font-size: 18px;
+}
+
+.button {
+    margin-top: 10px;
+    display: flex;
+}
+
+.button2 {
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.button .bt {
+    width: 90px;
+    height: 25px;
+    display: block;
+    margin: auto;
+}
+
+.pangkat {
+    width: 60px;
+    height: 25px;
+    display: block;
+    margin: auto;
+}
+
+.enter {
+    width: 80px;
+    height: 25px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.nomor {
+    width: 25px;
+    height: 19px;
+    display: block;
+    margin: auto;
+}

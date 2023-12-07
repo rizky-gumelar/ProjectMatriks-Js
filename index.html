@@ -1,0 +1,112 @@
+<!-- Nama : Rizky Syah Gumelar -->
+<!-- NIM : A11.2021.13304 -->
+
+<!-- PROJECT MATRIKS -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT MATRIKS</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+
+    <div class="matriks">
+        <div id="matA">
+            <h1>Matriks A</h1>
+            <h3>rows x cols</h3>
+            <div class="rc">
+                <input name="rowA" type="number" value="3">
+                <p>&nbsp x &nbsp</p>
+                <input name="colA" type="number" value="3">
+            </div>
+            <input class="enter" type="button" value="Enter" onclick="fA()">
+            <div id="A">
+                <script>
+                    fA();
+                </script>
+            </div>
+            <!-- <script>
+                var table = '';
+                var rows = document.getElementsByName('row')[0].value;
+                var cols = document.getElementsByName('col')[0].value;
+
+                for(var r=0; r<rows; r++){
+                    table += '<tr>';
+                        for(var c=0; c<cols; c++){
+                            table += '<th><input type="number"></th>';
+                        }
+                     table += '</tr>';
+                }
+                document.write('<table>' + table + '</table>')
+            </script> -->
+            <div class="button">
+                <input class="bt" type="button" value="Transpose" onclick="transposeA()">
+                <input class="bt" type="button" value="Determinan" onclick="determinan(inputA())">
+                <input class="bt" type="button" value="Pangkat 2" onclick="fpangkatA()">
+            </div>
+            <div class="button2">
+                <input class="pangkat" type="button" value="Kali" onclick="fkaliA()">
+                <input class="nomor" type="number" name="kaliA" value="2">
+            </div>
+        </div>
+        <div class="operasi">
+            <input type="button" value="A + B" onclick="fAdd()"><br>
+            <input type="button" value="A - B" onclick="fSub()"><br>
+            <input type="button" value="A x B" onclick="fTimes()">
+        </div>
+        <div id="matB">
+            <h1>Matriks B</h1>
+            <h3>rows x cols</h3>
+            <div class="rc">
+                <input name="rowB" type="number" value="3">
+                <p>&nbsp x &nbsp</p>
+                <input name="colB" type="number" value="3">
+            </div>
+            <input class="enter" type="button" value="Enter" onclick="fB()">
+            <div id="B">
+                <script>
+                    fB();
+                </script>
+            </div>
+            <!-- <script>
+                var table = '';
+                var rows = document.getElementsByName('row')[0].value;
+                var cols = document.getElementsByName('col')[0].value;
+
+                for(var r=0; r<rows; r++){
+                    table += '<tr>';
+                        for(var c=0; c<cols; c++){
+                            table += '<th><input type="number"></th>';
+                        }
+                     table += '</tr>';
+                }
+                document.write('<table>' + table + '</table>')
+            </script> -->
+            <div class="button">
+                <input class="bt" type="button" value="Transpose" onclick="transposeB()">
+                <input class="bt" type="button" value="Determinan" onclick="determinan(inputB())">
+                <input class="bt" type="button" value="Pangkat 2" onclick="fpangkatB()">
+                <!-- <input class="nomor" type="number" value="2"> -->
+            </div>
+            <div class="button2">
+                <input class="pangkat" type="button" value="Kali" onclick="fkaliB()">
+                <input class="nomor" type="number" name="kaliB" value="2">
+            </div>
+        </div>
+    </div>
+
+    <div id="hasile"></div>
+
+
+</body>
+
+</html>
